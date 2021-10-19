@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "Beer Money";
+	src: url("../fonts/beer-money.ttf") format("truetype");
+}
+
+:focus {
+	outline-color: gold;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Beer Money", decorative;
+	color: white;
+}
+
+header,
+footer {
+	background-color: rgb(61, 61, 61);
+}
+
+section {
+	min-height: 100vh;
+	padding: 50px 0;
+}
+
+p {
+	font-family: "Georgia", serif;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-family: "Russo One", sans-serif;
+	font-size: 1.5rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.overlay {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+
+	background-color: rgba(0, 0, 0, 0.548);
+}
+
+.image-container {
+	position: relative;
+	width: 60%;
+}
+
+.original-image {
+	box-sizing: border-box;
+	width: 100%;
+	max-height: 75vh;
+	padding: 20px;
+	border: 20px ridge rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.815);
+}
+
+.btn-close {
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	width: 50px;
+	height: 50px;
+
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgb(10, 94, 189),
+		inset 0 0 3px blue;
+	background-color: #fff;
+	background-image: url("../img/icon-close.svg");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	transition: all 0.25s;
+}
+
+.btn-close:hover {
+	box-shadow: 0 0 5px 2px gold;
+	filter: hue-rotate(200deg);
+}
+
+@media (max-width: 992px) {
+	.image-container {
+		width: 70%;
+	}
+}
+
+@media (max-width: 768) {
+	.image-container {
+		width: 80%;
+	}
+}

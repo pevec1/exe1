@@ -1,0 +1,22 @@
+.Menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	list-style-type: none;
+	width: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+.Menu a {
+	color: white;
+	font-size: 1.5rem;
+	transition: all 0.25s;
+}
+
+.Menu a:hover {
+	color: rgb(245, 186, 78);
+	text-decoration: none;
+}
